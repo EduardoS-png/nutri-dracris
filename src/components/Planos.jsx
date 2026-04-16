@@ -6,7 +6,7 @@ const planos = [
   {
     nome: "Essencial",
     desc: "Ideal para quem está começando sua jornada de saúde.",
-    preco: "R$ 200",
+    preco: "R$ 200 reais",
     periodo: "mensal",
     features: [
       "Atendimento online ou presencial",
@@ -19,9 +19,9 @@ const planos = [
   },
   {
     nome: "Transformação",
-    destaque: true,
     desc: "Para resultados reais e duradouros com acompanhamento próximo.",
-    preco: "R$ 500",
+    preco: "R$ 500 reais",
+    destaque: true,
     periodo: "trimestral",
     features: [
       "Plano alimentar atualizado mensalmente",
@@ -35,7 +35,7 @@ const planos = [
   {
     nome: "Performance",
     desc: "Para quem busca evolução máxima e acompanhamento completo.",
-    preco: "R$ 1000",
+    preco: "R$ 1000 reais",
     periodo: "semestral",
     features: [
       "Tudo do plano Transformação",
@@ -99,12 +99,6 @@ export default function Planos() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-rosa/10 to-verde/10" />
 
               <div className="relative z-10 flex flex-col h-full">
-                {plano.destaque && (
-                  <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-xs px-3 py-1 rounded-full bg-verde text-white font-semibold shadow-sm">
-                    Mais popular
-                  </span>
-                )}
-
                 <h3 className="text-lg font-semibold text-cinza-dark">
                   {plano.nome}
                 </h3>

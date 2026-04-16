@@ -67,12 +67,16 @@ export default function Header() {
                 </button>
               ))}
 
-              <button
-                onClick={() => scrollTo("#")}
-                className="glass-hover px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-rosa-dark text-branco hover:bg-rosa hover:text-verde-dark hover:shadow-rosa-dark/30 hover:scale-105"
+              <motion.a
+                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.03 }}
+                href="https://wa.me/5581981239275?text=Olá! Vim pelo site e Gostaria de agendar uma consulta."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 md:px-6 md:py-3 rounded-full text-sm font-semibold bg-verde text-white shadow-md hover:shadow-lg transition-all mx-auto md:mx-0"
               >
                 Agendar Consulta
-              </button>
+              </motion.a>
             </nav>
 
             <button
@@ -108,12 +112,16 @@ export default function Header() {
                   </button>
                 ))}
 
-                <button
-                  onClick={() => scrollTo("#")}
-                  className="self-start px-4 py-2 rounded-full text-xs font-semibold transition-all duration-300 bg-rosa-dark text-branco hover:bg-rosa hover:text-verde-dark"
+                <motion.a
+                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.03 }}
+                  href="https://wa.me/5581981239275?text=Olá! Vim pelo site e Gostaria de agendar uma consulta."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2.5 md:px-6 md:py-3 rounded-full text-sm font-semibold bg-verde text-white shadow-md hover:shadow-lg transition-all mx-auto md:mx-0"
                 >
                   Agendar Consulta
-                </button>
+                </motion.a>
               </div>
             </motion.div>
           )}

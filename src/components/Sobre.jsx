@@ -2,6 +2,25 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useParallax, useSectionTransition } from "../lib/animations";
 
+const diferenciais = [
+  {
+    title: "Atendimento próximo",
+    desc: "Cuidado contínuo e humano",
+  },
+  {
+    title: "Plano personalizado",
+    desc: "Feito para você, não para a média",
+  },
+  {
+    title: "Resultados consistentes",
+    desc: "Sustentáveis no longo prazo",
+  },
+  {
+    title: "Base científica",
+    desc: "Decisões guiadas por evidências",
+  },
+];
+
 export default function Sobre() {
   const ref = useRef(null);
   const { y } = useParallax(ref, 60);
@@ -64,12 +83,7 @@ export default function Sobre() {
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-4">
-              {[
-                ["Atendimento próximo", "Acompanhamento real"],
-                ["Plano personalizado", "Nada genérico"],
-                ["Resultados reais", "Sem efeito sanfona"],
-                ["Base científica", "Com evidência"],
-              ].map(([title, desc], i) => (
+              {diferenciais.map((item, i) => (
                 <div
                   key={i}
                   className="
@@ -81,9 +95,9 @@ export default function Sobre() {
                   "
                 >
                   <p className="text-sm font-semibold text-rosa-dark">
-                    {title}
+                    {item.title}
                   </p>
-                  <p className="text-xs text-cinza mt-1">{desc}</p>
+                  <p className="text-xs text-cinza mt-1">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -91,7 +105,7 @@ export default function Sobre() {
             <button
               onClick={() =>
                 document
-                  .querySelector("#contato")
+                  .querySelector("#planos")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
               className="

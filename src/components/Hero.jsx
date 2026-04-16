@@ -95,14 +95,16 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2 items-center md:items-start">
-              <motion.button
+              <motion.a
                 whileTap={{ scale: 0.95 }}
                 whileHover={{ scale: 1.03 }}
-                onClick={() => scrollTo("#metodo")}
+                href="https://wa.me/5581981239275?text=Olá! Vim pelo site e Gostaria de agendar uma consulta."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-5 py-2.5 md:px-6 md:py-3 rounded-full text-sm font-semibold bg-verde text-white shadow-md hover:shadow-lg transition-all mx-auto md:mx-0"
               >
                 Agendar Consulta
-              </motion.button>
+              </motion.a>
             </div>
 
             <div className="flex gap-4 md:gap-6 pt-4 justify-center md:justify-start flex-wrap">

@@ -30,16 +30,10 @@ export default function Footer() {
                 <Phone size={18} style={{ color: "#8baf8a" }} />
                 (81) 98123-9275
               </a>
-              <a
-                href="mailto:"
-                className="flex items-center gap-3 text-sm transition-opacity hover:opacity-70 text-cinza-light"
-              >
-                <Mail size={18} style={{ color: "#8baf8a" }} />
-              </a>
               <div className="flex items-start gap-3 text-sm text-cinza-light">
                 <MapPin size={18} style={{ color: "#8baf8a" }} />
                 <span>
-                  Rua Exemplo, 123 - Bairro Exemplo
+                  Rua Padre Antônio Tomaz, 308 - Maurício de Nassau
                   <br />
                   Caruaru - PE
                 </span>
@@ -53,7 +47,7 @@ export default function Footer() {
             </h5>
             <div className="flex gap-3">
               <a
-                href=""
+                href="https://www.instagram.com/criiscarvalho.nutri?igsh=dzR0cnduYzNxZnpl"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -85,9 +79,6 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-            <p className="mt-4 text-xs text-cinza-light">
-              CRN: 0000/0 - Registro Profissional
-            </p>
 
             <h5 className="font-primary text-lg font-semibold my-4 text-branco">
               Atribuições

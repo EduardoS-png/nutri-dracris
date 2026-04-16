@@ -2,40 +2,40 @@ import { Flame, Dumbbell, Scale, Leaf, Activity } from "lucide-react";
 import { motion } from "framer-motion";
 import { staggerItem, staggerContainer, sectionSoft } from "../lib/animations";
 
-export default function Especialidades() {
-  const especialidades = [
-    {
-      title: "Perda de Gordura",
-      desc: "Redução de gordura com preservação de massa magra, sem extremismos.",
-      icon: Flame,
-      img: "",
-    },
-    {
-      title: "Ganho de Massa",
-      desc: "Estratégias nutricionais alinhadas ao treino para hipertrofia eficiente.",
-      icon: Dumbbell,
-      img: "",
-    },
-    {
-      title: "Recomposição Corporal",
-      desc: "Perder gordura e ganhar músculo ao mesmo tempo, com método.",
-      icon: Scale,
-      img: "",
-    },
-    {
-      title: "Nutrição Funcional",
-      desc: "Equilíbrio do organismo através de alimentos estratégicos.",
-      icon: Leaf,
-      img: "",
-    },
-    {
-      title: "Saúde Hormonal",
-      desc: "Suporte nutricional para equilíbrio hormonal e bem-estar.",
-      icon: Activity,
-      img: "",
-    },
-  ];
+const especialidades = [
+  {
+    title: "Perda de Gordura",
+    desc: "Redução de gordura com preservação de massa magra, sem extremismos.",
+    icon: Flame,
+    img: "/perda-gordura.webp",
+  },
+  {
+    title: "Ganho de Massa",
+    desc: "Estratégias nutricionais alinhadas ao treino para hipertrofia eficiente.",
+    icon: Dumbbell,
+    img: "/ganho-muscular.webp",
+  },
+  {
+    title: "Recomposição Corporal",
+    desc: "Perder gordura e ganhar músculo ao mesmo tempo, com método.",
+    icon: Scale,
+    img: "/recomposicao.webp",
+  },
+  {
+    title: "Nutrição Funcional",
+    desc: "Equilíbrio do organismo através de alimentos estratégicos.",
+    icon: Leaf,
+    img: "/nutricao-funcional.webp",
+  },
+  {
+    title: "Saúde Hormonal",
+    desc: "Suporte nutricional para equilíbrio hormonal e bem-estar.",
+    icon: Activity,
+    img: "/saude-hormonal.webp",
+  },
+];
 
+export default function Especialidades() {
   return (
     <motion.section
       variants={sectionSoft}
