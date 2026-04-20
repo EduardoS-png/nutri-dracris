@@ -30,12 +30,34 @@ export default function Footer() {
                 <Phone size={18} style={{ color: "#8baf8a" }} />
                 (81) 98123-9275
               </a>
+              <a
+                href="mailto:crissnutri7@gmail.com"
+                className="flex items-center gap-3 text-sm transition-opacity hover:opacity-70 text-cinza-light"
+              >
+                <Mail size={18} style={{ color: "#8baf8a" }} />
+                <span className="text-sm text-cinza-light">
+                  crissnutri7@gmail.com
+                </span>
+              </a>
               <div className="flex items-start gap-3 text-sm text-cinza-light">
                 <MapPin size={18} style={{ color: "#8baf8a" }} />
                 <span>
-                  Rua Padre Antônio Tomaz, 308 - Maurício de Nassau
+                  Clinica Vitta Plenus - Rua Padre Antônio Tomaz, 308 - Maurício
+                  de Nassau
                   <br />
                   Caruaru - PE
+                </span>
+              </div>
+              <div className="flex items-start gap-3 text-sm text-cinza-light">
+                <MapPin size={18} style={{ color: "#8baf8a" }} />
+                <span>Clinica Welliany Flávia</span>
+              </div>
+              <div className="flex items-start gap-3 text-sm text-cinza-light">
+                <MapPin size={18} style={{ color: "#8baf8a" }} />
+                <span>
+                  Clinica Granlab - Rua Clementino Semente, 44 - Centro
+                  <br />
+                  Camocim de São Félix - PE
                 </span>
               </div>
             </div>
