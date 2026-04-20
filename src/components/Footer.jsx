@@ -114,6 +114,17 @@ export default function Footer() {
                 Peso ícones criados por Darius Dan - Flaticon
               </a>
             </div>
+            <p className="text-sm text-cinza-light">
+              Desenvolvido por{" "}
+              <a
+                href="https://www.instagram.com/duduu.dev?igsh=MWFnZjhwamI1czYxOA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-rosa-dark transition-opacity hover:opacity-70"
+              >
+                Eduardo Sousa
+              </a>
+            </p>
           </div>
         </div>
       </div>
